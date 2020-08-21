@@ -55,7 +55,7 @@ margin-top: -1rem;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 1rem;
-    padding-top: 2rem;
+    padding-top: 0;
 
 
 }
@@ -188,9 +188,11 @@ h3:hover{
     color: red;
     
 }
-/* span{
+span{ 
     text-align: center;
-} */
+    /* background-color: teal; */
+   
+} 
 
 p, span{
     color: #586069
