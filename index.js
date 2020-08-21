@@ -151,8 +151,7 @@ fetch(url)
                 <a href="${newRepo[12].html_url}">
                 <h3>${newRepo[12].name}</h3>
                 </a>
-                <p>updated ${newRepo[12].updated_at}</p>
-                <p>updated ${newRepo[12].updated_at}</p>
+              
                 <p>${formatDate(myDate)}</p>
            
 
