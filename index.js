@@ -1,41 +1,4 @@
-// const app = document.querySelector('#root')
 
-// const logo = document.createElement('img')
-// logo.src = 'logo.png';
-
-// const container = document.createElement('div')
-// container.setAttribute('class', 'container')
-
-// app.appendChild(logo)
-// app.appendChild(container)
-
-// const url = 'https://ghibliapi.herokuapp.com/films'
-
-// fetch(url)
-//     .then((response) => {
-//         return response.json()
-//     })
-//     .then((movie) => {
-//         movie.forEach((movies) => {
-//             const card = document.createElement('div')
-//             card.setAttribute('class', 'card')
-
-//             const h1 = document.createElement('h1')
-//             h1.textContent = movies.title
-
-//             const p = document.createElement('p')
-//             movies.description = movies.description.substring(0, 200)
-//             p.textContent = `${movies.description}`
-
-//             container.appendChild(card)
-//             card.appendChild(h1)
-//             card.appendChild(p)
-
-//         })
-//     })
-//     .catch((err) => {
-//         console.log('error')
-//     })
 
 const app = document.querySelector("#root");
 const container = document.createElement("div");
@@ -92,20 +55,68 @@ fetch(url)
     const cardTwo = document.createElement("div");
     cardTwo.setAttribute("class", "cardTwo");
 
+
+
+
     container.appendChild(cardOne);
     container.appendChild(cardTwo);
 
+    console.log(cardTwo)
+
+
     const myRepo = "https://api.github.com/users/amycruz97/repos";
+
 
     return fetch(myRepo)
       .then((response) => {
         return response.json();
       })
       .then((newRepo) => {
+
+
         for (let i = 0; i < newRepo.length; i++) {
           console.log(newRepo[i].html_url);
 
+
+
+
+
           cardTwo.innerHTML = `
+
+             
+              <div class="find">
+
+              <input class="text" placeholder="find a repository">
+              <span>
+              <select id="select" name="select">
+                <option value="all" disabled>Alll</option>
+                <option value="all" >Alll</option>
+                <option value="private">Private</option>
+              <option value="public">Public</option>
+                <option value="sources">Sources</option>
+                <option value="forked">Forked</option>
+                <option value="archived">Archived</option>
+                <option value="mirrors">Mirrors</option>
+                </select>
+              </span>
+              <span>
+              <select id="select" name="select">
+                <option value="all">Alll</option>
+                <option value="javascript">Javascript/option>
+              <option value="css">CSS</option>
+                <option value="html">HTML</option>
+                </select>
+              </span>
+           
+              <button class="new"> <a href="https://github.com/new" class="new">
+                    <svg class="octicon octicon-repo" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+                      New
+                </a></button>
+
+              </div>
+
+              <hr>
+
                     <div>
                     <a href="${newRepo[12].html_url}">
                     <h3>${newRepo[12].name}</h3>
@@ -114,7 +125,7 @@ fetch(url)
                     <hr>
                     </div>
 
-                    
+
                     <div>
                     <a href="${newRepo[13].html_url}">
                     <h3>${newRepo[13].name}</h3>
@@ -125,37 +136,64 @@ fetch(url)
                     <p>${newRepo[13].description}</p>
                     <div>
                     <span class="javascript"></span>
-                    <span><svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img"><path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path></svg></span>
                     <span>Javascript</span>
+                    <a href ="https://github.com/amycruz97/hiring-without-whiteboards/network/members">
+                    <span><svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img"><path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path></svg></span>
+                    <span>1635</span>
+                    </a>
+                    <span><svg class="octicon octicon-law mr-1" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.75.75a.75.75 0 00-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 013.984 3H1.75a.75.75 0 000 1.5h.428L.066 9.192a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.514 3.514 0 00.686.45A4.492 4.492 0 003 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 00.686-.45l.045-.04.016-.015.006-.006.002-.002.001-.002L5.25 9.5l.53.53a.75.75 0 00.154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 01.124-.033h.984V13h-2.5a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-2.5V3.5h.984a.25.25 0 01.124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.517 3.517 0 00.686.45A4.492 4.492 0 0013 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 00.686-.45l.045-.04.01-.01.006-.005.006-.006.002-.002.001-.002-.529-.531.53.53a.75.75 0 00.154-.838L13.823 4.5h.427a.75.75 0 000-1.5h-2.234a.25.25 0 01-.124-.033l-1.29-.736A1.75 1.75 0 009.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"></path></svg></span>
+                    <span>${newRepo[13].license}</span>
+                    <span>updated ${newRepo[13].updated_at}</span>
                     </div>
                     <hr>
                     </div>
+
+
 
                     <div>
                     <a href="${newRepo[19].html_url}">
                     <h3>${newRepo[19].name}</h3>
                     </a>
-                    <p>updated ${newRepo[19].updated_at}</p>
+                    <span class="css"></span>
+                    <span>CSS</span>
+                    <span>updated ${newRepo[19].updated_at}</span>
                     <hr>
                     </div>
 
+                    <div>
                     <a href="${newRepo[6].html_url}">
                     <h3>${newRepo[6].name}</h3>
                     </a>
                     <small>Forked from
                     <a href="https://github.com/TheOdinProject/curriculum">TheOdinProject/curriculum</a>
-                     </small>
-                     <p>${newRepo[6].description}</p>
+                    </small>
+                    <p>${newRepo[6].description}</p>
+                    <div>
+                    <a href ="https://github.com/amycruz97/curriculum/network/members">
+                    <span><svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img"><path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path></svg></span>
+                    <span>6253</span>
+                    </a>
+                    <span><svg class="octicon octicon-law mr-1" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.75.75a.75.75 0 00-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 013.984 3H1.75a.75.75 0 000 1.5h.428L.066 9.192a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.514 3.514 0 00.686.45A4.492 4.492 0 003 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 00.686-.45l.045-.04.016-.015.006-.006.002-.002.001-.002L5.25 9.5l.53.53a.75.75 0 00.154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 01.124-.033h.984V13h-2.5a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-2.5V3.5h.984a.25.25 0 01.124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.517 3.517 0 00.686.45A4.492 4.492 0 0013 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 00.686-.45l.045-.04.01-.01.006-.005.006-.006.002-.002.001-.002-.529-.531.53.53a.75.75 0 00.154-.838L13.823 4.5h.427a.75.75 0 000-1.5h-2.234a.25.25 0 01-.124-.033l-1.29-.736A1.75 1.75 0 009.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"></path></svg></span>
+                    <span>${newRepo[6].license}</span>
+                    <span>updated ${newRepo[6].updated_at}</span>
+                    </div>
                     <hr>
+                    </div>
+
+
 
 
                     <div>
                     <a href="${newRepo[16].html_url}">
                     <h3>${newRepo[16].name}</h3>
                     </a>
-                    <p>updated ${newRepo[16].updated_at}</p>
+                    <span class="javascript"></span>
+                    <span>Javascript</span>
+                    <span>updated ${newRepo[16].updated_at}</span>
                     <hr>
                     </div>
+
+
 
                     <div>
                     <a href="${newRepo[0].html_url}">
@@ -163,10 +201,21 @@ fetch(url)
                     </a>
                     <small>Forked from
                     <a href="https://github.com/amycruz97/awesome-learning-resources">lauragift21/awesome-learning-resources</a>
-                     </small>
-                     <p>${newRepo[0].description}</p>
+                    </small>
+                    <p>${newRepo[0].description}</p>
+                    <div>
+                    <a href ="https://github.com/amycruz97/awesome-learning-resources/network/members">
+                    <span><svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img"><path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path></svg></span>
+                    <span>460</span>
+                    </a>
+                    <span><svg class="octicon octicon-law mr-1" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.75.75a.75.75 0 00-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 013.984 3H1.75a.75.75 0 000 1.5h.428L.066 9.192a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.514 3.514 0 00.686.45A4.492 4.492 0 003 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 00.686-.45l.045-.04.016-.015.006-.006.002-.002.001-.002L5.25 9.5l.53.53a.75.75 0 00.154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 01.124-.033h.984V13h-2.5a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-2.5V3.5h.984a.25.25 0 01.124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.517 3.517 0 00.686.45A4.492 4.492 0 0013 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 00.686-.45l.045-.04.01-.01.006-.005.006-.006.002-.002.001-.002-.529-.531.53.53a.75.75 0 00.154-.838L13.823 4.5h.427a.75.75 0 000-1.5h-2.234a.25.25 0 01-.124-.033l-1.29-.736A1.75 1.75 0 009.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"></path></svg></span>
+                    <span>${newRepo[0].license}</span>
+                    <span>updated ${newRepo[0].updated_at}</span>
+                    </div>
                     <hr>
                     </div>
+
+
 
                     <div>
                     <a href="${newRepo[4].html_url}">
@@ -174,18 +223,36 @@ fetch(url)
                     </a>
                     <small>Forked from
                     <a href="https://github.com/creativecommons/cccatalog-frontend">creativecommons/cccatalog-frontend</a>
-                     </small>
-                     <p>${newRepo[4].description}</p>
+                    </small>
+                    <p>${newRepo[4].description}</p>
+                    <div>
+                    <span class="javascript"></span>
+                    <span>Javascript</span>
+                    <a href ="https://github.com/amycruz97/cccatalog-frontend/network/members">
+                    <span><svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img"><path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path></svg></span>
+                    <span>221</span>
+                    </a>
+                    <span><svg class="octicon octicon-law mr-1" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.75.75a.75.75 0 00-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 013.984 3H1.75a.75.75 0 000 1.5h.428L.066 9.192a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.514 3.514 0 00.686.45A4.492 4.492 0 003 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 00.686-.45l.045-.04.016-.015.006-.006.002-.002.001-.002L5.25 9.5l.53.53a.75.75 0 00.154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 01.124-.033h.984V13h-2.5a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-2.5V3.5h.984a.25.25 0 01.124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.517 3.517 0 00.686.45A4.492 4.492 0 0013 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 00.686-.45l.045-.04.01-.01.006-.005.006-.006.002-.002.001-.002-.529-.531.53.53a.75.75 0 00.154-.838L13.823 4.5h.427a.75.75 0 000-1.5h-2.234a.25.25 0 01-.124-.033l-1.29-.736A1.75 1.75 0 009.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"></path></svg></span>
+                    <span>${newRepo[4].license}</span>
+                    <span>updated ${newRepo[4].updated_at}</span>
+                    </div>
                     <hr>
                     </div>
+
+
 
                     <div>
                     <a href="${newRepo[7].html_url}">
                     <h3>${newRepo[7].name}</h3>
                     </a>
-                    <p>updated ${newRepo[7].updated_at}</p>
+                    <span class="javascript"></span>
+                    <span>Javascript</span>
+                    <span>updated ${newRepo[7].updated_at}</span>
+
                     <hr>
                     </div>
+
+
 
                     <div>
                     <a href="${newRepo[21].html_url}">
@@ -193,23 +260,42 @@ fetch(url)
                     </a>
                     <small>Forked from
                     <a href="https://github.com/unicodeveloper/tech-hubs">unicodeveloper/tech-hubs</a>
-                     </small>
-                
-                     <p>🏠🏢${newRepo[21].description}</p>
+                    </small>
+                    <p>🏠🏢${newRepo[21].description}</p>
+                    <a href ="https://github.com/amycruz97/tech-hubs/network/members">
+                    <span><svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img"><path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path></svg></span>
+                    <span>91</span>
+                    </a>
+                    <span>updated ${newRepo[7].updated_at}</span>
                     <hr>
                     </div>
 
-                    
+
+
+
                     <div>
                     <a href="${newRepo[14].html_url}">
                     <h3>${newRepo[14].name}</h3>
                     </a>
                     <small>Forked from
                     <a href="https://github.com/DavidAnson/markdownlint">DavidAnson/markdownlint</a>
-                     </small>
-                     <p>${newRepo[14].description}</p>
+                    </small>
+                    <p>${newRepo[14].description}</p>
+                    <div>
+                    <span class="javascript"></span>
+                    <span>Javascript</span>
+                    <a href ="https://github.com/amycruz97/markdownlint/network/members">
+                    <span><svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img"><path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path></svg></span>
+                    <span>291</span>
+                    </a>
+                    <span><svg class="octicon octicon-law mr-1" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.75.75a.75.75 0 00-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 013.984 3H1.75a.75.75 0 000 1.5h.428L.066 9.192a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.514 3.514 0 00.686.45A4.492 4.492 0 003 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 00.686-.45l.045-.04.016-.015.006-.006.002-.002.001-.002L5.25 9.5l.53.53a.75.75 0 00.154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 01.124-.033h.984V13h-2.5a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-2.5V3.5h.984a.25.25 0 01.124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.517 3.517 0 00.686.45A4.492 4.492 0 0013 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 00.686-.45l.045-.04.01-.01.006-.005.006-.006.002-.002.001-.002-.529-.531.53.53a.75.75 0 00.154-.838L13.823 4.5h.427a.75.75 0 000-1.5h-2.234a.25.25 0 01-.124-.033l-1.29-.736A1.75 1.75 0 009.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"></path></svg></span>
+                    <span>${newRepo[14].license}</span>
+                    <span>updated ${newRepo[14].updated_at}</span>
+                    </div>
                     <hr>
-                    
+
+
+
 
                     <div>
                     <a href="${newRepo[17].html_url}">
@@ -219,24 +305,48 @@ fetch(url)
                     <a href="https://github.com/github/personal-website">github/personal-website</a>
                     </small>
                     <p>${newRepo[17].description}</p>
+                    <div>
+                    <span class="html"></span>
+                    <span>HTML</span>
+                    <a href ="https://github.com/amycruz97/personal-website/network/members">
+                    <span><svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img"><path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path></svg></span>
+                    <span>5698</span>
+                    </a>
+                    <span><svg class="octicon octicon-law mr-1" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.75.75a.75.75 0 00-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 013.984 3H1.75a.75.75 0 000 1.5h.428L.066 9.192a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.514 3.514 0 00.686.45A4.492 4.492 0 003 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 00.686-.45l.045-.04.016-.015.006-.006.002-.002.001-.002L5.25 9.5l.53.53a.75.75 0 00.154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 01.124-.033h.984V13h-2.5a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-2.5V3.5h.984a.25.25 0 01.124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.517 3.517 0 00.686.45A4.492 4.492 0 0013 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 00.686-.45l.045-.04.01-.01.006-.005.006-.006.002-.002.001-.002-.529-.531.53.53a.75.75 0 00.154-.838L13.823 4.5h.427a.75.75 0 000-1.5h-2.234a.25.25 0 01-.124-.033l-1.29-.736A1.75 1.75 0 009.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"></path></svg></span>
+                    <span>${newRepo[17].license}</span>
+                    <span>updated ${newRepo[17].updated_at}</span>
+                    </div>
                     <hr>
                     </div>
+
+
+
 
                     <div>
                     <a href="${newRepo[18].html_url}">
                     <h3>${newRepo[18].name}</h3>
                     </a>
                     <p>${newRepo[18].description}</p>
+                    <span class="html"></span>
+                    <span>HTML</span>
+                    <span>updated ${newRepo[18].updated_at}</span>
                     <hr>
                     </div>
 
+
+
+ 
                     <div>
                     <a href="${newRepo[2].html_url}">
                     <h3>${newRepo[2].name}</h3>
                     </a>
-                    <p>updated ${newRepo[2].updated_at}</p>
+                    <span class="html"></span>
+                    <span>HTML</span>
+                    <span>updated ${newRepo[2].updated_at}</span>
                     <hr>
                     </div>
+
+
 
                     <div>
                     <a href="${newRepo[23].html_url}">
@@ -246,64 +356,123 @@ fetch(url)
                     <a href="https://github.com/scotch-io/ultimate-guide-to-javascript-algorithms">scotch-io/ultimate-guide-to-javascript-algorithms</a>
                     </small>
                     <p>${newRepo[23].description}</p>
+                    <span class="javascript"></span>
+                    <span>Javascript</span>
+                    <a href ="https://github.com/amycruz97/ultimate-guide-to-javascript-algorithms/network/members">
+                    <span><svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img"><path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path></svg></span>
+                    <span>72</span>
+                    </a>
+                    <span>updated ${newRepo[23].updated_at}</span>
                     <hr>
                     </div>
+
+
+
 
                     <div>
                     <a href="${newRepo[10].html_url}">
                     <h3>${newRepo[10].name}</h3>
                     </a>
                     <p>${newRepo[10].description}</p>
+                    <span class="html"></span>
+                    <span>HTML</span>
+                    <span>updated ${newRepo[10].updated_at}</span>
                     <hr>
                     </div>
+
+
 
                     <div>
                     <a href="${newRepo[20].html_url}">
                     <h3>${newRepo[20].name}</h3>
                     </a>
-                    <p>updated ${newRepo[20].updated_at}</p>
+                    <span class="javascript"></span>
+                    <span>Javascript</span>
+                    <span>updated ${newRepo[20].updated_at}</span>
                     <hr>
                     </div>
+
+
 
                     <div>
                     <a href="${newRepo[22].html_url}">
                     <h3>${newRepo[22].name}</h3>
                     </a>
-                    <p>updated ${newRepo[22].updated_at}</p>
+                    <span class="html"></span>
+                    <span>HTML</span>
+                    <span>updated ${newRepo[2].updated_at}</span>
                     <hr>
                     </div>
+
+
+
 
                     <div>
                     <a href="${newRepo[5].html_url}">
                     <h3>${newRepo[5].name}</h3>
                     </a>
                     <p>${newRepo[5].description}</p>
+                    <span class="javascript"></span>
+                    <span>Javascript</span>
+                    <span><svg class="octicon octicon-law mr-1" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.75.75a.75.75 0 00-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 013.984 3H1.75a.75.75 0 000 1.5h.428L.066 9.192a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.514 3.514 0 00.686.45A4.492 4.492 0 003 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 00.686-.45l.045-.04.016-.015.006-.006.002-.002.001-.002L5.25 9.5l.53.53a.75.75 0 00.154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 01.124-.033h.984V13h-2.5a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-2.5V3.5h.984a.25.25 0 01.124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.517 3.517 0 00.686.45A4.492 4.492 0 0013 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 00.686-.45l.045-.04.01-.01.006-.005.006-.006.002-.002.001-.002-.529-.531.53.53a.75.75 0 00.154-.838L13.823 4.5h.427a.75.75 0 000-1.5h-2.234a.25.25 0 01-.124-.033l-1.29-.736A1.75 1.75 0 009.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"></path></svg></span>
+                    <span>${newRepo[17].license}</span>
                     <hr>
                     </div>
+
+
+
 
                     <div>
                     <a href="${newRepo[11].html_url}">
                     <h3>${newRepo[11].name}</h3>
                     </a>
                     <p>${newRepo[11].description}</p>
+                    <span class="html"></span>
+                    <span>HTML</span>
+                    <span>updated ${newRepo[2].updated_at}</span>
                     <hr>
                     </div>
+
+
 
                     <div>
                     <a href="${newRepo[15].html_url}">
                     <h3>${newRepo[15].name}</h3>
                     </a>
                     <p>${newRepo[15].description}</p>
+                    <span class="html"></span>
+                    <span>HTML</span>
+                    <span>updated ${newRepo[2].updated_at}</span>
                     <hr>
                     </div>
+
+
 
                     <div>
                     <a href="${newRepo[1].html_url}">
                     <h3>${newRepo[1].name}</h3>
                     </a>
                     <p>${newRepo[1].description}</p>
+                    <span class="html"></span>
+                    <span>HTML</span>
+                    <span>updated ${newRepo[2].updated_at}</span>
                     <hr>
                     </div>
+
+
+
+
+                    <div>
+                    <a href="${newRepo[3].html_url}">
+                    <h3>${newRepo[3].name}</h3>
+                    </a>
+                    <p>${newRepo[3].description}</p>
+                    <span class="html"></span>
+                    <span>HTML</span>
+                    <span>updated ${newRepo[3].updated_at}</span>
+                    <hr>
+                    </div>
+
 
 
                     <div>
@@ -311,9 +480,12 @@ fetch(url)
                     <h3>${newRepo[8].name}</h3>
                     </a>
                     <p>${newRepo[8].description}</p>
+                    <span class="html"></span>
+                    <span>HTML</span>
+                    <span>updated ${newRepo[2].updated_at}</span>
                     <hr>
                     </div>
-                    
+
 
                     <div>
                     <a href="${newRepo[9].html_url}">
@@ -322,7 +494,7 @@ fetch(url)
                     <p>${newRepo[9].description}</p>
                     <hr>
                     </div>
-                   
+
 
 
 
