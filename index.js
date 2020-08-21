@@ -151,8 +151,10 @@ fetch(url)
                 <a href="${newRepo[12].html_url}">
                 <h3>${newRepo[12].name}</h3>
                 </a>
-              
-                <p>${formatDate(myDate)}</p>
+
+                <span class="javascript"></span>
+            <span>Javascript</span>
+                <span>${formatDate(myDate)}</span>
            
 
               </div>
