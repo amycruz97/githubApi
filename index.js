@@ -61,7 +61,7 @@ fetch(url)
     container.appendChild(cardOne);
     container.appendChild(cardTwo);
 
-    console.log(cardTwo)
+    // console.log(cardTwo)
 
 
     const myRepo = "https://api.github.com/users/amycruz97/repos";
@@ -75,11 +75,11 @@ fetch(url)
 
 
         for (let i = 0; i < newRepo.length; i++) {
-          console.log(newRepo[i].html_url);
 
-
-
-
+          const repository = document.querySelector('.repoNum')
+          repository.innerHTML = `${newRepo.length}`
+         
+          
 
           cardTwo.innerHTML = `
 

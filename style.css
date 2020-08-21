@@ -38,6 +38,18 @@ margin-top: -1rem;
 .headerIcon a:hover{
     color: #1b1f23;
 }
+
+.repoNum{
+    background-color: rgba(209,213,218,.5);
+    border: 1px solid transparent;
+    border-radius: 2em;
+    min-width: 50px;
+    padding: 5px 6px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #24292e;
+}
 .container{
     display: flex;
     flex-direction: row;
