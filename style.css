@@ -82,14 +82,10 @@ margin-top: -1rem;
     justify-content: space-between;
    
 } 
-
-.star{
-    /* background-color: wheat */
-}
-
+/* 
 .theRepo{
-    /* background-color: pink; */
-}
+    background-color: pink;
+} */
 
 .avatar{
     width: 70%;
@@ -200,12 +196,19 @@ p, span{
 small{
     color:#586069;
     padding-top: 1rem;
-    margin-top: 5rem
+    margin-top: 5rem;
+    padding-right: 2rem;
 }
 small a{
     color:#586069;
     
 }
+
+
+.unstarIcon{
+    display:none ;
+  
+  }
 
 .javascript{
     position: relative;
