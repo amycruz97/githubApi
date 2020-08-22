@@ -29,7 +29,7 @@ fetch(url)
 
         <button class="edit" >Edit profile</button>
 
-        <div class="follows">
+      <div class="follows">
         <span>
         <a href="https://github.com/amycruz97?tab=followers">
         <svg text="gray-light" height="16" class="octicon octicon-people text-gray-light" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M5.5 3.5a2 2 0 100 4 2 2 0 000-4zM2 5.5a3.5 3.5 0 115.898 2.549 5.507 5.507 0 013.034 4.084.75.75 0 11-1.482.235 4.001 4.001 0 00-7.9 0 .75.75 0 01-1.482-.236A5.507 5.507 0 013.102 8.05 3.49 3.49 0 012 5.5zM11 4a.75.75 0 100 1.5 1.5 1.5 0 01.666 2.844.75.75 0 00-.416.672v.352a.75.75 0 00.574.73c1.2.289 2.162 1.2 2.522 2.372a.75.75 0 101.434-.44 5.01 5.01 0 00-2.56-3.012A3 3 0 0011 4z"></path></svg>
@@ -50,32 +50,34 @@ fetch(url)
         </a>
         </span>
         
-        </div>
+      </div>
 
-        <div>
+        <div class="location">
         <svg class="octicon octicon-location" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11.536 3.464a5 5 0 010 7.072L8 14.07l-3.536-3.535a5 5 0 117.072-7.072v.001zm1.06 8.132a6.5 6.5 0 10-9.192 0l3.535 3.536a1.5 1.5 0 002.122 0l3.535-3.536zM8 9a2 2 0 100-4 2 2 0 000 4z"></path></svg>
         <span>${repo.location}</span>
         </div>
 
-        <div>
+        <div class="userName">
         <i class="fab fa-twitter"></i>
-        <span><a href="https://twitter.com/AmarachiAmaechi">${repo.twitter_username}</a></span>
+        <span><a href="https://twitter.com/AmarachiAmaechi" class="twitter">${repo.twitter_username}</a></span>
+        <hr>
         </div>
 
-        <hr>
+        
 
-        <div>
+        <div class="highlights">
 
         <h4>Highlights</h4>
         <svg class="octicon octicon-north-star text-gray-light mr-1" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8.5.75a.75.75 0 00-1.5 0v5.19L4.391 3.33a.75.75 0 10-1.06 1.061L5.939 7H.75a.75.75 0 000 1.5h5.19l-2.61 2.609a.75.75 0 101.061 1.06L7 9.561v5.189a.75.75 0 001.5 0V9.56l2.609 2.61a.75.75 0 101.06-1.061L9.561 8.5h5.189a.75.75 0 000-1.5H9.56l2.61-2.609a.75.75 0 00-1.061-1.06L8.5 5.939V.75z"></path></svg>
         <span>Arctic Code Vault Contributor</span>
+        <hr>
         </div>
 
-        <hr>
-
+       
+      <div class="organisation">
         <h4>Organisation</h4>
         <img src="https://avatars2.githubusercontent.com/u/8825476?s=60&v=4" alt="organisation">
-        
+      </div>
 
         `;
     // console.log(cardOne)

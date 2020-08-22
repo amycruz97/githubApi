@@ -187,6 +187,12 @@ small a{
     
 }
 
+.twitter{
+    color:#586069;
+   
+    
+}
+
 
 .unstarIcon{
     display:none ;
@@ -273,4 +279,9 @@ small a{
         padding-left: 10px
         
     }
+
+    .location, .userName, .highlights, .organisation{
+   
+        display: none;
   }
+}
