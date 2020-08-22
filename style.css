@@ -8,7 +8,7 @@ body{
 
 .header{
 
-padding: 2rem 0rem;
+padding: 1rem 0rem;
 
 
 
@@ -167,11 +167,6 @@ h3:hover{
     text-decoration: underline;
 
 }
-.text-gray-light {
-    /* color: #6a737d; */
-    color: red;
-    
-}
 span{ 
     text-align: center;
     /* background-color: teal; */
@@ -236,20 +231,19 @@ small a{
 
 @media only screen and (max-width: 800px) {
     body {
-      background-color: lightblue;
+       /* background-color: lightblue; */
     }
     .container{
         display: flex;
         flex-direction: column;
-        width: 100%;
         align-items: center;
         align-content: center;
         justify-content: center;
-        padding: 2rem;
+        /* padding: 2rem; */
     }
 
     .cardOne,.cardTwo{
-        background-color: lime;
-        width: 100vw;
+      
+        width: 100%;
     }
   }
