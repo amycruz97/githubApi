@@ -19,7 +19,7 @@ fetch(url)
     <div class="avatarName">
     <img src="${repo.avatar_url}" alt="avata" class="avatar">
     <div>
-        <h2>${repo.name}</h2>
+        <h2 class="name">${repo.name}</h2>
         <h4 class="username">${repo.login}</h4>
       </div>
     </div>
