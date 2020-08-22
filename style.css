@@ -7,37 +7,25 @@ body{
 } */
 
 .header{
-/* background-color: #fff; */
-padding: 1rem 0rem;
-display: flex;
-justify-content: center;
-align-items: center;
-/* position: sticky;
-position: -webkit-sticky;
-top: 0; */
-width: 100vw;
 
-border-bottom: 1px solid #e1e4e8;
-margin-top: -1rem;
+padding: 2rem 0rem;
 
 
-}
-.headerContent{
-    margin-left: 9rem;
-    
 
-}
-.headerIcon{
-    margin-right: 2rem;
+
 }
 .headerIcon a{
     color: #1b1f23;
+    padding-right: 1rem;
 
 }
 
 .headerIcon a:hover{
     color: #1b1f23;
-}
+    border-bottom: 2px solid #e1e4e8;
+   
+} 
+
 
 .repoNum{
     background-color: rgba(209,213,218,.5);
@@ -122,7 +110,7 @@ margin-top: -1rem;
 
 .find{
 
-   padding : 2rem;
+   padding : 1.5rem 0 ;
    display: flex;
    flex-direction: row;
 }
