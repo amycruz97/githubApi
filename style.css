@@ -239,11 +239,32 @@ small a{
         align-items: center;
         align-content: center;
         justify-content: center;
-        /* padding: 2rem; */
+       
     }
 
     .cardOne,.cardTwo{
       
         width: 100%;
+    }
+
+    .avatar{
+        align-content: center;
+        text-align: center;
+        width: 20%;
+        height: 20%;
+        margin-top: 1rem;
+       
+    }
+
+    .avatarName{
+      
+        display: flex;
+        
+
+    }
+
+    .avatarName .username{
+       
+        margin-top: -1rem;
     }
   }

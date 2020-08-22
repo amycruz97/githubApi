@@ -15,9 +15,16 @@ fetch(url)
     let cardOne = document.createElement("div");
     cardOne.setAttribute("class", "cardOne");
     cardOne.innerHTML = `
-        <img src="${repo.avatar_url}" alt="avata" class="avatar">
+
+    <div class="avatarName">
+    <img src="${repo.avatar_url}" alt="avata" class="avatar">
+    <div>
         <h2>${repo.name}</h2>
-        <h4>${repo.login}</h4>
+        <h4 class="username">${repo.login}</h4>
+      </div>
+    </div>
+        
+       
         <p>${repo.bio}</p>
 
         <button class="edit" >Edit profile</button>
