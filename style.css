@@ -230,7 +230,7 @@ small a{
 
 
 .twitterIcon path{
-    background-color: chartreuse;
+
     width: 10%;
     color: #6a737d;
 }
@@ -283,5 +283,22 @@ small a{
     .location, .userName, .highlights, .organisation{
    
         display: none;
+  }
+
+  .header{
+     
+      width: 100%;
+    
+  }
+
+  .headerIcon a{
+     
+      padding-right: 3px
+  }
+
+  .headerIcons{
+    
+      display: none;
+     
   }
 }
