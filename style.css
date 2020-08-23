@@ -101,7 +101,7 @@ body {
 
 .find input {
     border-color: #d1d5da;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -109,7 +109,7 @@ body {
     -o-border-radius: 10px;
     outline: none;
     margin-right: 1rem;
-    width: 45%;
+    
 }
 
 #select {
@@ -302,5 +302,9 @@ small a {
       
         text-align: center;
         margin-top: 1.5rem;
+    }
+    small{
+        padding-right: 0.5rem;
+        /* background-color:pink; */
     }
 }
