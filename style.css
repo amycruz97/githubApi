@@ -101,24 +101,19 @@ body {
 
 .find input {
     border-color: #d1d5da;
-    padding: 0.5rem 10rem;
+    padding: 0.5rem;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     outline: none;
-    margin-right: 1rem
-  
-}
-
-.selectInput{
-   
-   
+    margin-right: 1rem;
+    width: 45%;
 }
 
 #select {
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 1rem;
     border-radius: 6px;
     outline: none;
     margin-right: 0.5rem;
@@ -288,7 +283,7 @@ small a {
     }
     .find input {
         margin-bottom: 0.5rem;
-   
+        width: 90%;
     }
     #select {
         padding: 0.5rem 0.5rem;
@@ -299,10 +294,8 @@ small a {
         -o-border-radius: 5px;
     }
     .findInput {
-        padding: 0.5rem 10rem;
-        background: teal;
-        width: 40%;
-        
+        /* width: 100%; */
+        margin-bottom: 1rem
     }
     h2 {
         font-size: 0.8rem;
