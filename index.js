@@ -101,7 +101,7 @@ fetch(url)
         //Looping through cardTwo
 
         for (let i = 0; i < newRepo.length; i++) {
-         
+
 
           // FOR UPDATED AT 
 
@@ -113,7 +113,7 @@ fetch(url)
             return new Date(myDate).toLocaleDateString(undefined, options);
           };
 
-   
+
 
 
 
@@ -165,7 +165,11 @@ fetch(url)
              
             <div class="find">
 
-              <input class="text" placeholder="find a repository">
+             <div class="findInput">
+             <input class="text" placeholder="find a repository">
+             </div>
+
+             <div class="selectInput">
               <span>
               <select id="select" name="select">
                 <option value="all" disabled>All</option>
@@ -193,11 +197,13 @@ fetch(url)
                       New
                 </a></button>
 
-              </div>
+                </div>
+
+            </div>
 
               <hr>
 
-              
+           
           <di class="cards">
 
             <div class="card1">
@@ -925,11 +931,10 @@ fetch(url)
               <span class="html"></span>
               <small>HTML</small>
               <small>updated ${formatDate(myDate)}</small>
-            
+ 
               </div>
 
-              
-              
+
             <div class="star">
             <button class="starIcon" >
             <i class="far fa-star" >star<span class="stars"></span></i>
@@ -939,10 +944,6 @@ fetch(url)
             </button>
   
           </div> 
-
-          
-
-              
 
             </div>
 
@@ -964,7 +965,7 @@ fetch(url)
                     `;
 
 
-                     // for repository length
+          // for repository length
           const repository = document.querySelector(".repoNum");
           repository.innerHTML = `${newRepo.length}`;
 
@@ -972,43 +973,43 @@ fetch(url)
 
 
 
-// const star = document.querySelectorAll('.star')
-// star.forEach((stars)=>{
-//   stars.addEventListener('click', myStar)
- 
-// })
-  
+          // const star = document.querySelectorAll('.star')
+          // star.forEach((stars)=>{
+          //   stars.addEventListener('click', myStar)
+
+          // })
 
 
 
 
-     
-
-// function myStar(){
-
-//    const starIcon = document.querySelectorAll('.starIcon').forEach((starIcons)=>{
-
-//   starIcons.style.display = (
-//        starIcons.style.display == "block" ? "none" : "block"); 
-
-     
-//    });
 
 
-//    const unstarIcon = document.querySelectorAll('.unstarIcon').forEach((unstarIcons)=>{
 
-//     unstarIcons.style.display = (
-//          unstarIcons.style.display ==  "none" ? "block" : "none"); 
-  
-       
-//      })
-    
-  
+          // function myStar(){
+
+          //    const starIcon = document.querySelectorAll('.starIcon').forEach((starIcons)=>{
+
+          //   starIcons.style.display = (
+          //        starIcons.style.display == "block" ? "none" : "block"); 
 
 
-//   console.log('ok')
+          //    });
 
-// }
+
+          //    const unstarIcon = document.querySelectorAll('.unstarIcon').forEach((unstarIcons)=>{
+
+          //     unstarIcons.style.display = (
+          //          unstarIcons.style.display ==  "none" ? "block" : "none"); 
+
+
+          //      })
+
+
+
+
+          //   console.log('ok')
+
+          // }
 
         }
       })
