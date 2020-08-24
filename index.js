@@ -221,15 +221,13 @@ fetch(url)
 
               </div>
 
-              <div class="star">
-              <button class="starIcon" >
-              <i class="far fa-star" >star<span class="stars"></span></i>
-              </button>
-              <button class="unstarIcon">
-              <i class="fas fa-star" >unstar<span class="unstar"></span></i>
-              </button>
-    
-            </div> 
+             
+  <div class="star-wrapper">
+  <button class="stars" id="star-1">
+      <span class="star"><i class="far fa-star"></i> star</span>
+      <span class="unstar"><i class="fas fa-star"></i> unstar</span>
+  </button>
+</div>
 
             </div>
 
@@ -262,15 +260,13 @@ fetch(url)
           </div>
 
           
-          <div class="star">
-          <button class="starIcon" >
-          <i class="far fa-star" >star<span class="stars"></span></i>
-          </button>
-          <button class="unstarIcon">
-          <i class="fas fa-star" >unstar<span class="unstar"></span></i>
-          </button>
-
-        </div> 
+          
+  <div class="star-wrapper">
+  <button class="stars" id="star-2">
+      <span class="star"><i class="far fa-star"></i> star</span>
+      <span class="unstar"><i class="fas fa-star"></i> unstar</span>
+  </button>
+</div> 
             
 
           </div>
@@ -290,15 +286,13 @@ fetch(url)
               </div>
 
 
-              <div class="star">
-              <button class="starIcon" >
-              <i class="far fa-star" >star<span class="stars"></span></i>
-              </button>
-              <button class="unstarIcon">
-              <i class="fas fa-star" >unstar<span class="unstar"></span></i>
-              </button>
-    
-            </div> 
+              
+  <div class="star-wrapper">
+  <button class="stars" id="star-3">
+      <span class="star"><i class="far fa-star"></i> star</span>
+      <span class="unstar"><i class="fas fa-star"></i> unstar</span>
+  </button>
+</div>
 
           </div>
 
@@ -326,15 +320,13 @@ fetch(url)
               </div>
 
              
-            <div class="star">
-            <button class="starIcon" >
-            <i class="far fa-star" >star<span class="stars"></span></i>
-            </button>
-            <button class="unstarIcon">
-            <i class="fas fa-star" >unstar<span class="unstar"></span></i>
-            </button>
-  
-          </div> 
+           
+  <div class="star-wrapper">
+  <button class="stars" id="star-4">
+      <span class="star"><i class="far fa-star"></i> star</span>
+      <span class="unstar"><i class="fas fa-star"></i> unstar</span>
+  </button>
+</div>
 
             </div>
 
@@ -353,16 +345,13 @@ fetch(url)
               
               </div>
 
-             
-            <div class="star">
-            <button class="starIcon" >
-            <i class="far fa-star" >star<span class="stars"></span></i>
-            </button>
-            <button class="unstarIcon">
-            <i class="fas fa-star" >unstar<span class="unstar"></span></i>
-            </button>
-  
-          </div> 
+           
+  <div class="star-wrapper">
+  <button class="stars" id="star-5">
+      <span class="star"><i class="far fa-star"></i> star</span>
+      <span class="unstar"><i class="fas fa-star"></i> unstar</span>
+  </button>
+</div>
 
             </div>
 
@@ -391,16 +380,13 @@ fetch(url)
               </div>
 
               
-            <div class="star">
-            <button class="starIcon" >
-            <i class="far fa-star" >star<span class="stars"></span></i>
-            </button>
-            <button class="unstarIcon">
-            <i class="fas fa-star" >unstar<span class="unstar"></span></i>
-            </button>
-  
-          </div> 
-
+          
+  <div class="star-wrapper">
+  <button class="stars" id="star-6">
+      <span class="star"><i class="far fa-star"></i> star</span>
+      <span class="unstar"><i class="fas fa-star"></i> unstar</span>
+  </button>
+</div>
               </div>
 
               <hr>
@@ -430,15 +416,13 @@ fetch(url)
               </div>
 
              
-            <div class="star">
-            <button class="starIcon" >
-            <i class="far fa-star" >star<span class="stars"></span></i>
-            </button>
-            <button class="unstarIcon">
-            <i class="fas fa-star" >unstar<span class="unstar"></span></i>
-            </button>
-  
-          </div> 
+           
+  <div class="star-wrapper">
+  <button class="stars" id="star-7">
+      <span class="star"><i class="far fa-star"></i> star</span>
+      <span class="unstar"><i class="fas fa-star"></i> unstar</span>
+  </button>
+</div>
 
               </div>
 
@@ -457,15 +441,13 @@ fetch(url)
               
               </div>
              
-            <div class="star">
-            <button class="starIcon" >
-            <i class="far fa-star" >star<span class="stars"></span></i>
-            </button>
-            <button class="unstarIcon">
-            <i class="fas fa-star" >unstar<span class="unstar"></span></i>
-            </button>
-  
-          </div> 
+          
+  <div class="star-wrapper">
+  <button class="stars" id="star-8">
+      <span class="star"><i class="far fa-star"></i> star</span>
+      <span class="unstar"><i class="fas fa-star"></i> unstar</span>
+  </button>
+</div>
 
               </div>
 
@@ -489,16 +471,13 @@ fetch(url)
               
               </div>
 
-             
-            <div class="star">
-            <button class="starIcon" >
-            <i class="far fa-star" >star<span class="stars"></span></i>
-            </button>
-            <button class="unstarIcon">
-            <i class="fas fa-star" >unstar<span class="unstar"></span></i>
-            </button>
-  
-          </div> 
+           
+  <div class="star-wrapper">
+  <button class="stars" id="star-9">
+      <span class="star"><i class="far fa-star"></i> star</span>
+      <span class="unstar"><i class="fas fa-star"></i> unstar</span>
+  </button>
+</div>
 
               </div>
 
@@ -526,16 +505,13 @@ fetch(url)
               </div>
               </div>
 
-             
-            <div class="star">
-            <button class="starIcon" >
-            <i class="far fa-star" >star<span class="stars"></span></i>
-            </button>
-            <button class="unstarIcon">
-            <i class="fas fa-star" >unstar<span class="unstar"></span></i>
-            </button>
-  
-          </div> 
+           
+  <div class="star-wrapper">
+  <button class="stars" id="star-10">
+      <span class="star"><i class="far fa-star"></i> star</span>
+      <span class="unstar"><i class="fas fa-star"></i> unstar</span>
+  </button>
+</div>
               </div>
               <hr>
 
@@ -566,15 +542,13 @@ fetch(url)
               
               </div>
 
-              <div class="star">
-              <button class="starIcon" >
-              <i class="far fa-star" >star<span class="stars"></span></i>
-              </button>
-              <button class="unstarIcon">
-              <i class="fas fa-star" >unstar<span class="unstar"></span></i>
-              </button>
-    
-            </div> 
+              
+  <div class="star-wrapper">
+  <button class="stars" id="star-11">
+      <span class="star"><i class="far fa-star"></i> star</span>
+      <span class="unstar"><i class="fas fa-star"></i> unstar</span>
+  </button>
+</div>
 
               </div>
 
@@ -594,15 +568,13 @@ fetch(url)
               </div>
               
               
-            <div class="star">
-            <button class="starIcon" >
-            <i class="far fa-star" >star<span class="stars"></span></i>
-            </button>
-            <button class="unstarIcon">
-            <i class="fas fa-star" >unstar<span class="unstar"></span></i>
-            </button>
-  
-          </div> 
+           
+  <div class="star-wrapper">
+  <button class="stars" id="star-12">
+      <span class="star"><i class="far fa-star"></i> star</span>
+      <span class="unstar"><i class="fas fa-star"></i> unstar</span>
+  </button>
+</div>
 
               </div>
 
@@ -622,15 +594,13 @@ fetch(url)
               </div>
 
               
-            <div class="star">
-            <button class="starIcon" >
-            <i class="far fa-star" >star<span class="stars"></span></i>
-            </button>
-            <button class="unstarIcon">
-            <i class="fas fa-star" >unstar<span class="unstar"></span></i>
-            </button>
-  
-          </div> 
+           
+  <div class="star-wrapper">
+  <button class="stars" id="star-13">
+      <span class="star"><i class="far fa-star"></i> star</span>
+      <span class="unstar"><i class="fas fa-star"></i> unstar</span>
+  </button>
+</div>
 
               </div>
 
@@ -656,17 +626,13 @@ fetch(url)
               
               </div>
 
-             
-            <div class="star">
-            <button class="starIcon" >
-            <i class="far fa-star" >star<span class="stars"></span></i>
-            </button>
-            <button class="unstarIcon">
-            <i class="fas fa-star" >unstar<span class="unstar"></span></i>
-            </button>
-  
-          </div> 
-
+        
+  <div class="star-wrapper">
+  <button class="stars" id="star-14">
+      <span class="star"><i class="far fa-star"></i> star</span>
+      <span class="unstar"><i class="fas fa-star"></i> unstar</span>
+  </button>
+</div>
               </div>
 
               <hr>
@@ -685,17 +651,13 @@ fetch(url)
               
               </div>
 
-             
-            <div class="star">
-            <button class="starIcon" >
-            <i class="far fa-star" >star<span class="stars"></span></i>
-            </button>
-            <button class="unstarIcon">
-            <i class="fas fa-star" >unstar<span class="unstar"></span></i>
-            </button>
-  
-          </div> 
-
+       
+  <div class="star-wrapper">
+  <button class="stars" id="star-15">
+      <span class="star"><i class="far fa-star"></i> star</span>
+      <span class="unstar"><i class="fas fa-star"></i> unstar</span>
+  </button>
+</div>
               </div>
 
               <hr>
@@ -712,15 +674,13 @@ fetch(url)
              
               </div>
 
-              <div class="star">
-              <button class="starIcon" >
-              <i class="far fa-star" >star<span class="stars"></span></i>
-              </button>
-              <button class="unstarIcon">
-              <i class="fas fa-star" >unstar<span class="unstar"></span></i>
-              </button>
-    
-            </div> 
+            
+  <div class="star-wrapper">
+  <button class="stars" id="star-16">
+      <span class="star"><i class="far fa-star"></i> star</span>
+      <span class="unstar"><i class="fas fa-star"></i> unstar</span>
+  </button>
+</div>
              
 
               </div>
@@ -739,15 +699,12 @@ fetch(url)
              
               </div>
 
-              <div class="star">
-              <button class="starIcon" >
-              <i class="far fa-star" >star<span class="stars"></span></i>
+              <div class="star-wrapper">
+              <button class="stars" id="star-17">
+                  <span class="star"><i class="far fa-star"></i> star</span>
+                  <span class="unstar"><i class="fas fa-star"></i> unstar</span>
               </button>
-              <button class="unstarIcon">
-              <i class="fas fa-star" >unstar<span class="unstar"></span></i>
-              </button>
-    
-            </div> 
+          </div>
 
               </div>
 
@@ -770,16 +727,13 @@ fetch(url)
               
               </div>
 
-              
-            <div class="star">
-            <button class="starIcon" >
-            <i class="far fa-star" >star<span class="stars"></span></i>
-            </button>
-            <button class="unstarIcon">
-            <i class="fas fa-star" >unstar<span class="unstar"></span></i>
-            </button>
-  
-          </div> 
+           
+  <div class="star-wrapper">
+  <button class="stars" id="star-18">
+      <span class="star"><i class="far fa-star"></i> star</span>
+      <span class="unstar"><i class="fas fa-star"></i> unstar</span>
+  </button>
+</div>
 
               </div>
               <hr>
@@ -799,16 +753,13 @@ fetch(url)
               
               </div>
 
-              
-            <div class="star">
-            <button class="starIcon" >
-            <i class="far fa-star" >star<span class="stars"></span></i>
-            </button>
-            <button class="unstarIcon">
-            <i class="fas fa-star" >unstar<span class="unstar"></span></i>
-            </button>
-  
-          </div> 
+          
+  <div class="star-wrapper">
+  <button class="stars" id="star-19">
+      <span class="star"><i class="far fa-star"></i> star</span>
+      <span class="unstar"><i class="fas fa-star"></i> unstar</span>
+  </button>
+</div>
 
               </div>
               <hr>
@@ -827,15 +778,13 @@ fetch(url)
               </div>
 
               
-            <div class="star">
-            <button class="starIcon" >
-            <i class="far fa-star" >star<span class="stars"></span></i>
-            </button>
-            <button class="unstarIcon">
-            <i class="fas fa-star" >unstar<span class="unstar"></span></i>
-            </button>
-  
-          </div> 
+          
+  <div class="star-wrapper">
+  <button class="stars" id="star-20">
+      <span class="star"><i class="far fa-star"></i> star</span>
+      <span class="unstar"><i class="fas fa-star"></i> unstar</span>
+  </button>
+</div>
 
               </div>
               <hr>
@@ -854,16 +803,13 @@ fetch(url)
               </div>
 
             
-              <div class="star">
-              <button class="starIcon" >
-              <i class="far fa-star" >star<span class="stars"></span></i>
-              </button>
-              <button class="unstarIcon">
-              <i class="fas fa-star" >unstar<span class="unstar"></span></i>
-              </button>
-    
-            </div> 
-
+        
+  <div class="star-wrapper">
+  <button class="stars" id="star-21">
+      <span class="star"><i class="far fa-star"></i> star</span>
+      <span class="unstar"><i class="fas fa-star"></i> unstar</span>
+  </button>
+</div>
               </div>
 
               <hr>
@@ -880,16 +826,13 @@ fetch(url)
               <small>HTML</small>
               <small>updated ${formatDate(myDate)}</small>
               </div>
-             
-            <div class="star">
-            <button class="starIcon" >
-            <i class="far fa-star" >star<span class="stars"></span></i>
-            </button>
-            <button class="unstarIcon">
-            <i class="fas fa-star" >unstar<span class="unstar"></span></i>
-            </button>
-  
-          </div> 
+         
+  <div class="star-wrapper">
+  <button class="stars" id="star-22">
+      <span class="star"><i class="far fa-star"></i> star</span>
+      <span class="unstar"><i class="fas fa-star"></i> unstar</span>
+  </button>
+</div>
 
               </div>
               <hr>
@@ -908,16 +851,13 @@ fetch(url)
               </div>
 
 
-              
-            <div class="star">
-            <button class="starIcon" >
-            <i class="far fa-star" >star<span class="stars"></span></i>
-            </button>
-            <button class="unstarIcon">
-            <i class="fas fa-star" >unstar<span class="unstar"></span></i>
-            </button>
-  
-          </div> 
+         
+  <div class="star-wrapper">
+  <button class="stars" id="star-23">
+      <span class="star"><i class="far fa-star"></i> star</span>
+      <span class="unstar"><i class="fas fa-star"></i> unstar</span>
+  </button>
+</div>
 
               </div>
               <hr>
@@ -935,15 +875,12 @@ fetch(url)
               </div>
 
 
-            <div class="star">
-            <button class="starIcon" >
-            <i class="far fa-star" >star<span class="stars"></span></i>
-            </button>
-            <button class="unstarIcon">
-            <i class="fas fa-star" >unstar<span class="unstar"></span></i>
-            </button>
-  
-          </div> 
+              <div class="star-wrapper">
+              <button class="stars" id="star-24">
+                  <span class="star"><i class="far fa-star"></i> star</span>
+                  <span class="unstar"><i class="fas fa-star"></i> unstar</span>
+              </button>
+          </div>
 
             </div>
 
@@ -972,44 +909,29 @@ fetch(url)
 
 
 
+          const star = document.querySelectorAll('.stars');
 
-          // const star = document.querySelectorAll('.star')
-          // star.forEach((stars)=>{
-          //   stars.addEventListener('click', myStar)
-
-          // })
-
+          star.forEach((stars) => {
+            stars.addEventListener('click', myStar)
+          })
 
 
+          function myStar(e) {
+            e.stopPropagation();
+            const currentElement = e.currentTarget;
 
 
+            let star = document.querySelector(`#${currentElement.id} .star`);
+
+            star.style.display = star.style.display == "block" ? "none" : "block"
+
+            let unstar = document.querySelector(`#${currentElement.id} .unstar`);
+            unstar.style.display = unstar.style.display == "none" ? "block" : "none"
 
 
-          // function myStar(){
-
-          //    const starIcon = document.querySelectorAll('.starIcon').forEach((starIcons)=>{
-
-          //   starIcons.style.display = (
-          //        starIcons.style.display == "block" ? "none" : "block"); 
+          }
 
 
-          //    });
-
-
-          //    const unstarIcon = document.querySelectorAll('.unstarIcon').forEach((unstarIcons)=>{
-
-          //     unstarIcons.style.display = (
-          //          unstarIcons.style.display ==  "none" ? "block" : "none"); 
-
-
-          //      })
-
-
-
-
-          //   console.log('ok')
-
-          // }
 
         }
       })

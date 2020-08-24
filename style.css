@@ -177,14 +177,10 @@ small a {
     color: #586069;
 }
 
-.star{
-    margin-top: 1.6rem;
-    
-}
-.starIcon, .unstarIcon{
+.stars{
     background-color:  #fafbfc;
     border: 1px solid rgba(27,31,35,.15);
-    padding: 6px 1rem;
+    padding: 6px 0.5rem;
     outline: none;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -197,7 +193,7 @@ small a {
     color: #586069;
 }
 
-.unstarIcon {
+.unstar {
     display: none;
 }
 
@@ -267,7 +263,7 @@ small a {
     .location, .userName, .highlights, .organisation {
         display: none;
     }
-    .header {
+    /* .header { */
         /* width: 100%; */
     }
     .headerIcon a {
