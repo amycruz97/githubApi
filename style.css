@@ -303,4 +303,17 @@ small a {
         padding-right: 0.5rem;
         /* background-color:pink; */
     }
+
+
+.stars{
+    background-color:  #fafbfc;
+    border: 1px solid rgba(27,31,35,.15);
+    padding: 3px 0.5rem;
+    outline: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
 }
