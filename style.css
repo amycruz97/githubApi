@@ -189,6 +189,11 @@ small a {
     -o-border-radius: 5px;
 }
 
+.star-wrapper{
+  
+    margin-top: 1rem;
+}
+
 .twitter {
     color: #586069;
 }
@@ -315,5 +320,11 @@ small a {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+
+.star-wrapper{
+  
+    margin-top: 1rem;
+    
 }
 }
