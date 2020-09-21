@@ -270,7 +270,7 @@ small a {
     }
     /* .header { */
         /* width: 100%; */
-    }
+    /* } */
     .headerIcon a {
         padding-right: 6px
     }
@@ -304,11 +304,7 @@ small a {
         text-align: center;
         margin-top: 1.5rem;
     }
-    small{
-        padding-right: 0.5rem;
-        /* background-color:pink; */
-    }
-
+    
 
 .stars{
     background-color:  #fafbfc;
@@ -327,4 +323,5 @@ small a {
     margin-top: 1rem;
     
 }
+
 }
